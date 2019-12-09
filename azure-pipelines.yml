@@ -22,7 +22,7 @@ variables:
 steps:
   - script: |
       docker build -t $(acrServer)/$(imageName) .
-      docker login -u $(acrId) -p $(acrPassword) $(acrUrl)
+      docker login -u $(acrId) -p $(acrPassword) $(acrServer)
       docker push $(acrServer)/$(imageName)
 
     displayName: Build Docker image
