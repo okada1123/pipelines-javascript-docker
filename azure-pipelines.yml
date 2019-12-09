@@ -9,7 +9,7 @@ resources:
   - repo: self
 
 variables:
-  - group: ACR_Valiables
+  - group: docker group
   - name: imageName
     value: myimage:$(Build.buildId)
   - name: acrId
