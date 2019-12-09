@@ -26,3 +26,5 @@ steps:
       docker push $(acrServer)/$(imageName)
 
     displayName: Build Docker image
+
+    #
